@@ -57,7 +57,6 @@ Simple explanation of SOLID principles with examples in Python
 ---
 
 # Reference: 
--
 - [1](https://www.infoworld.com/article/2953976/realize-the-open-closed-principle-using-abstractions.html)
 - [2](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
 - [3](https://www.youtube.com/watch?v=pTB30aXS77U)
