@@ -22,9 +22,9 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 #### Why useful?
     • Avoid tweaking the code to handle new requiremnts.
         - e.g. When you have algorithms that perform a calculation (cost, tax, game score, etc.):
-	       the algorithm will likely change over time.
+	          the algorithm will likely change over time.
         - e.g. When you have data coming or going from the system: the endpoint (file, database, another system) 
-	       is likely to change. So is the actual format of the data.
+	          is likely to change. So is the actual format of the data.
     • Building applications that are reusable and can be maintained easily.
 
 ---
