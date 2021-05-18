@@ -4,7 +4,6 @@ Simple explanation of SOLID principles with examples in Python
 # Defining the SOLID principles 
 
 ## 1. Single Responsibility
--
 - Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling one type of role.
 - A class should do one thing and therefore it should have only a single reason to change
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
@@ -17,7 +16,6 @@ Simple explanation of SOLID principles with examples in Python
 ---
 
 ## 2. Open/Closed
--
 - Be able to add new functionality to existing code(subsystem, classes, modules, functions, etc.) easily without modifying existing code.
 - Use abstract classes.
 
@@ -29,7 +27,6 @@ Simple explanation of SOLID principles with examples in Python
 ---
 
 ## 3. Liskov Substitution
--
 - When a class inherits from another class, the program shouldn't break and you shouldn't need to hack anything to use the subclass.
 - The problem is usually caused by inheriting class S from class T where S and T seem related but have one or more fundamental interface differences.
 - Liskov substitution principle applies to inheritance hierarchies. It is violated when a derived class cannot take the place of a base class without the system breaking.
@@ -41,7 +38,6 @@ Simple explanation of SOLID principles with examples in Python
 ---
 
 ## 4. Interface Segregation
-- 
 - Make interfaces (parent abstract classes) more specific, rather than generic.
 - Clients should not be forced to implement a function they do no need.
     - e.g. Create more interfaces (classes) if needed and/or provide objects to constructors.
@@ -49,7 +45,6 @@ Simple explanation of SOLID principles with examples in Python
 ---
 
 ## 5. Dependency Inversion
-- 
 - High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. Make classes inherit from abstract classes).
 - Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
 - It helps you separate components and helps reduce coupling in the code
