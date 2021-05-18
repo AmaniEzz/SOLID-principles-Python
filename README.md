@@ -3,7 +3,7 @@
 SOLID Principles is an acronym of 5 principles in Object Oriented Design (OOD).
 Robert C. Martin introduced these 5 principles in his 2000 paper "Design Principles and Design Patterns".
 
-## 1. Single Responsibility
+## 1. [Single Responsibility](https://github.com/AmaniEzz/SOLID-principles-Python/tree/main/Single%20Responsibility)
 - Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling single functionality. In other words, it should have only a single reason to change.
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
 
@@ -14,9 +14,14 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 ---
 
-## 2. Open/Closed
+## 2. [Open/Closed](https://github.com/AmaniEzz/SOLID-principles-Python/tree/main/Open-Closed)
 - Be able to add new functionality to existing code(subsystem, classes, modules, functions, etc.) easily without modifying existing code.
-- This could be done via abstract classes, Inheritance, or Composition.
+- This could be done via:
+    - Inheritance.
+    - Composition.
+    - @decoration: rewrites a class.
+    - Mixins and multiple inheritanc.
+    - Functional composition: functions and callable objects.
 
 
 #### Why useful?
@@ -29,7 +34,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 ---
 
-## 3. Liskov Substitution
+## 3. [Liskov Substitution](https://github.com/AmaniEzz/SOLID-principles-Python/tree/main/Liskov%20Substitution)
 - States that Objects in a program should be substitutable by the instances of their subtypes without modifying the correctness of a program.
 - The problem is usually caused by inheriting class S from class T where S and T seem related but have one or more fundamental interface differences.
 - To make sure you avoid violating this rule, try to first think of high-level abstractions/interfaces instead of low-level/concrete implementations.
@@ -45,7 +50,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 ---
 
-## 4. Interface Segregation
+## 4. [Interface Segregation](https://github.com/AmaniEzz/SOLID-principles-Python/tree/main/Interface%20Segregation)
 - Make interfaces (parent abstract classes) more specific, rather than generic.
 - Clients should not be forced to implement a function they do not require.
     - e.g. Create more interfaces (abstract classes) if needed and/or provide objects to constructors.
@@ -55,7 +60,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
     • Help write unit tests.
 ---
 
-## 5. Dependency Inversion
+## 5. [Dependency Inversion](https://github.com/AmaniEzz/SOLID-principles-Python/tree/main/Dependency%20Inversion)
 - High-level modules should not depend on low-level modules. Both should depend on abstractions or interfaces.
     - e.g. Make classes inherit from abstract classes.
 - A direct dependency - on a concrete class - need to be "inverted".
@@ -65,6 +70,13 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 ---
 
+## Final note
+
+    The starting point for design includes defining the overall responsibilities and collaboration,
+    and unit test cases; the SOLID principles help make a design better. .
+
+
+----
 # Reference: 
 - [1](https://www.infoworld.com/article/2953976/realize-the-open-closed-principle-using-abstractions.html)
 - [2](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
