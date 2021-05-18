@@ -8,9 +8,9 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
 
 ### Why useful?
-    •	Team collaboration on the same project, less prone to incompatibility.
-    •	Help in unit testing.
-    •	It makes version control easier, fewer conflicts will appear.
+    • Team collaboration on the same project, less prone to incompatibility.
+    • Help in unit testing.
+    • It makes version control easier, fewer conflicts will appear.
 
 ---
 
@@ -20,10 +20,10 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 
 ### Why useful?
-    •	Avoid tweaking the code to handle new requiremnts.
+    • Avoid tweaking the code to handle new requiremnts.
         - e.g. When you have algorithms that perform a calculation (cost, tax, game score, etc.): the algorithm will likely change over time.
         - e.eg When you have data coming or going from the system: the endpoint (file, database, another system) is likely to change. So is the actual format of the data.
-    •	Building applications that are reusable and can be maintained easily.
+    • Building applications that are reusable and can be maintained easily.
 
 ---
 
@@ -35,8 +35,8 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
     - e.g. Define constructor arguments to keep inheritance flexible.
 
 ## Why useful?
-    •   Helps programmers design good polymorphism. 
-    •	Constrains subclass design
+    • Helps programmers design good polymorphism. 
+    • Constrains subclass design
 
 > LSP is a concept that applies to polymorphism. 
 >> If you don’t use polymorphism at all you don’t need to care about the LSP.
@@ -49,8 +49,8 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
     - e.g. Create more interfaces (abstract classes) if needed and/or provide objects to constructors.
 
 ### Why useful?
-    •	Help write good classes.
-    •	Help write unit tests.
+    • Help write good classes.
+    • Help write unit tests.
 ---
 
 ## 5. Dependency Inversion
@@ -59,7 +59,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - A direct dependecy - on a concrete class - need to be "inverted".
 
 ### Why useful?
-    •	It helps you separate components and helps reduce coupling in the code.
+    • It helps you separate components and helps reduce coupling in the code.
 
 ---
 
