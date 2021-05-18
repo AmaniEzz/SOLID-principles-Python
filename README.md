@@ -34,7 +34,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
     - e.g use inheritance hierarchies
     - e.g. Define constructor arguments to keep inheritance flexible.
 
-## Why useful?
+### Why useful?
     • Helps programmers design good polymorphism. 
     • Constrains subclass design
 
