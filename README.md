@@ -3,7 +3,7 @@
 SOLID Principles is an acronym of 5 principles in Object Oriented Design (OOD).
 Robert C. Martin introduced these 5 principles in his 2000 paper "Design Principles and Design Patterns".
 
-## 1. Single Responsibility
+## 1. [Single Responsibility](https://github.com/AmaniEzz/SOLID-principles-Python/tree/main/Dependency%20Inversion)
 - Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling single functionality. In other words, it should have only a single reason to change.
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
 
