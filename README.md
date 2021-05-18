@@ -1,5 +1,5 @@
 # SOLID-principles-Python
-Simple explanation of SOLID principles with examples in Python 
+A guide to understanding SOLID principles with examples using Python.
 
 # Defining the SOLID principles 
 
