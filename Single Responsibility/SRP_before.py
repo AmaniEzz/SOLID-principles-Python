@@ -22,8 +22,8 @@ class Invoice:
 
     def calculate_total(self) -> float:
         """
-        The SRP states that our class should only have a single reason to change,
-        and that reason should be a change in the invoice calculation for our class.
+        The SRP states that our class should have a single reason to change,
+        and that reason should be the invoice calculation.
         """
         price = ((self.book.price - self.book.price * self.discount_rate) * self.quantity)
         price_with_taxes = price * (1 + self.tax_rate)
@@ -40,7 +40,7 @@ class Invoice:
     def save_to_file(self):
         """
         The second vioaltion: 
-        It is an extremely common mistake to mix persistence logic with business logic.
+        It is a common mistake to mix persistence logic with business logic.
         """
         return ("saving to file...")
 

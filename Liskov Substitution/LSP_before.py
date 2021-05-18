@@ -34,6 +34,7 @@ class ElectricCar(Vehicle):
 """
 In ElectricCar class violates the LSP. Cause the Vehicle class has an engine method. 
 Electric cars has no engine (they work by battery pack). So we could not start any engine.
+
 So we was forced to write exception handler, or maybe reture "0" or "None", which is not the best practice!
 Beacause code throws a run time error or exception or also might not work as expected
 and that leads to program failure or incorrect results.

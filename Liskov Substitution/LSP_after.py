@@ -2,7 +2,6 @@
 """
 child classes inherited from the parent class should not break the functionality
 when the child class object replaces the parent class object.
-
 So the class must inherit from the proper parent class in such a way that when the child class
 replaces the parent, it doesn't break the actual functionality provided by the parent class.
 """

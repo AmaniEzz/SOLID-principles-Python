@@ -2,7 +2,7 @@
 the Interface Segregation Principle means separating the interfaces.
 The principle states that many client-specific interfaces are better than one general-purpose interface. 
 Clients should not be forced to implement a function they do no need.
-Interface Segregation Principle "somtimes" could be considered as a solution of LSP violation. 
+Interface Segregation Principle "sometimes" could be considered as a solution of LSP violation. 
 """
 
 # Type of users example
@@ -61,7 +61,7 @@ class Staff(User):
 
 
 """
-In this example, we can see that different User types had to implement methods they don't need!
+In this example, we can see that different User types had to implement methods they don't require!
 """
 
 if __name__ == "__main__":

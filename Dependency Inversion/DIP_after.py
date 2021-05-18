@@ -28,7 +28,7 @@ class Production:
         self.food = food            # this is also dependnecy injection, as it is a parameter not hardcoded
 
     def produce(self):
-        self.food.bake()            # uses only the common interface
+        self.food.bake()           
 
     def consume(self):
-        self.food.eat()             # uses only the common interface
+        self.food.eat()        

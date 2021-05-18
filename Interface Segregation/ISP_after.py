@@ -1,5 +1,7 @@
 """
-Solution: separating the  User interfaces into more specific interfaces
+Solution: separating the  User interfaces into more specific interfaces,
+So that different User types are not forced to implement methods they don't really need!
+
 """
 
 # Type of users example
@@ -64,9 +66,6 @@ class Admin(StaffMember):
         return f"{username}' account unlocked successfully"
 
 
-"""
-We can see that different User types are no more forced to implement methods they don't really need!
-"""
 
 if __name__ == "__main__":
 

@@ -1,7 +1,9 @@
-#################################### Solution ################################
-# Create abstract class InvoicePersistence and and add an abstract save method, 
-# then each persistence class will implement this "save" method.
-
+"""
+Solution:
+Create abstract class InvoicePersistence and and add an abstract save method, 
+then each persistence class will implement this "save" method.
+If we got new requirements to add 2 different types of databases like MySQL and MongoDB, we can easily do that.
+"""
 from abc import ABC, abstractmethod
 from SRP_before import Book, Invoice
 
@@ -25,10 +27,6 @@ class FilePersistence(InvoicePersistence):
     def save(self):
         return ("I save to a file")
 
-
-# If our boss asks us to add another database and have 2 different types of databases
-# like MySQL and MongoDB, we can easily do that.
-#####################################################################################
 
 
 if __name__ == "__main__":
