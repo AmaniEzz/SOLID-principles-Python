@@ -7,7 +7,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling single functionality. In other words, it should have only a single reason to change
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
 
-### Why useful?
+#### Why useful?
     • Team collaboration on the same project, less prone to incompatibility.
     • Help in unit testing.
     • It makes version control easier, fewer conflicts will appear.
@@ -19,7 +19,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - This could be done via abstract classes, Inheritance, or Composition.
 
 
-### Why useful?
+#### Why useful?
     • Avoid tweaking the code to handle new requiremnts.
         - e.g. When you have algorithms that perform a calculation (cost, tax, game score, etc.): the algorithm will likely change over time.
         - e.g When you have data coming or going from the system: the endpoint (file, database, another system) is likely to change. So is the actual format of the data.
@@ -34,7 +34,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
     - e.g use inheritance hierarchies
     - e.g. Define constructor arguments to keep inheritance flexible.
 
-### Why useful?
+#### Why useful?
     • Helps programmers design good polymorphism. 
     • Constrains subclass design
 
@@ -48,7 +48,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - Clients should not be forced to implement a function they do not require.
     - e.g. Create more interfaces (abstract classes) if needed and/or provide objects to constructors.
 
-### Why useful?
+#### Why useful?
     • Help write good classes.
     • Help write unit tests.
 ---
@@ -58,7 +58,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
     - e.g. Make classes inherit from abstract classes.
 - A direct dependecy - on a concrete class - need to be "inverted".
 
-### Why useful?
+#### Why useful?
     • It helps you separate components and helps reduce coupling in the code.
 
 ---
