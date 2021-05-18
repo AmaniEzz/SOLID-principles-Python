@@ -4,7 +4,7 @@ SOLID Principles is an acronym of 5 principles in Object Oriented Design (OOD).
 Robert C. Martin introduced these 5 principles in his 2000 paper "Design Principles and Design Patterns".
 
 ## 1. Single Responsibility
-- Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling single functionality. In other words, it should have only a single reason to change
+- Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling single functionality. In other words, it should have only a single reason to change.
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
 
 #### Why useful?
@@ -22,7 +22,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 #### Why useful?
     • Avoid tweaking the code to handle new requiremnts.
         - e.g. When you have algorithms that perform a calculation (cost, tax, game score, etc.): the algorithm will likely change over time.
-        - e.g When you have data coming or going from the system: the endpoint (file, database, another system) is likely to change. So is the actual format of the data.
+        - e.g. When you have data coming or going from the system: the endpoint (file, database, another system) is likely to change. So is the actual format of the data.
     • Building applications that are reusable and can be maintained easily.
 
 ---
@@ -31,12 +31,12 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - States that Objects in a program should be substitutable by the instances of their subtypes without modifying the correctness of a program.
 - The problem is usually caused by inheriting class S from class T where S and T seem related but have one or more fundamental interface differences.
 - To make sure you avoid violating this rule, try to first think of high-level abstractions/interfaces instead of low-level/concrete implementations.
-    - e.g use inheritance hierarchies
-    - e.g. Define constructor arguments to keep inheritance flexible.
+    - e.g. use inheritance hierarchies.
+    - e.g. define constructor arguments to keep inheritance flexible.
 
 #### Why useful?
     • Helps programmers design good polymorphism. 
-    • Constrains subclass design
+    • Constrains subclass design.
 
 > LSP is a concept that applies to polymorphism. 
 >> If you don’t use polymorphism at all you don’t need to care about the LSP.
@@ -56,7 +56,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 ## 5. Dependency Inversion
 - High-level modules should not depend on low-level modules. Both should depend on abstractions or interfaces.
     - e.g. Make classes inherit from abstract classes.
-- A direct dependecy - on a concrete class - need to be "inverted".
+- A direct dependency - on a concrete class - need to be "inverted".
 
 #### Why useful?
     • It helps you separate components and helps reduce coupling in the code.
