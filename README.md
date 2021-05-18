@@ -1,5 +1,3 @@
-## SOLID-principles-Python
-
 # A brief guide to understanding SOLID principles with examples using Python.
 
 ## 1. Single Responsibility
