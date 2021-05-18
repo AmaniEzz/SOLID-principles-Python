@@ -1,7 +1,6 @@
-# SOLID-principles-Python
-A brief guide to understanding SOLID principles with examples using Python.
+## SOLID-principles-Python
 
-# Defining the SOLID principles 
+# A brief guide to understanding SOLID principles with examples using Python.
 
 ## 1. Single Responsibility
 - Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling one type of role.
