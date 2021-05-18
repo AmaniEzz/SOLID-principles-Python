@@ -1,5 +1,8 @@
 # A brief guide to understanding SOLID principles with examples written Python.
 
+SOLID Principles is an acronym of 5 principles in Object Oriented Design (OOD).
+Robert C. Martin introduced these 5 principles in his 2000 paper "Design Principles and Design Patterns".
+
 ## 1. Single Responsibility
 - Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling one type of role.
 - A class should do one thing and therefore it should have only a single reason to change
