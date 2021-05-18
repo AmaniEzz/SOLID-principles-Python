@@ -35,7 +35,7 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 - To make sure you avoid violating this rule, try to first think of high-level abstractions/interfaces instead of low-level/concrete implementations.
     - e.g. use inheritance hierarchies.
     - e.g. define constructor arguments to keep inheritance flexible.
-
+- Liskov Substitution help minimize the diffrence in method parameters, to assure the subclasses match the superclasses design.
 #### Why useful?
     • Helps programmers design good polymorphism. 
     • Constrains subclass design.
