@@ -4,8 +4,7 @@ SOLID Principles is an acronym of 5 principles in Object Oriented Design (OOD).
 Robert C. Martin introduced these 5 principles in his 2000 paper "Design Principles and Design Patterns".
 
 ## 1. Single Responsibility
-- Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling one type of role.
-- A class should do one thing and therefore it should have only a single reason to change
+- Make things (subsystem, classes, modules, functions, etc.) responsible for fulfilling single functionality. In other words, it should have only a single reason to change
 - Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
 
 ### Why useful?
@@ -17,7 +16,8 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 ## 2. Open/Closed
 - Be able to add new functionality to existing code(subsystem, classes, modules, functions, etc.) easily without modifying existing code.
-- Use abstract classes.
+- This could be done via abstract classes, Inheritance, or Composition.
+
 
 ### Why useful?
     •	When you have algorithms that perform a calculation (cost, tax, game score, etc.): the algorithm will likely change over time.
@@ -27,11 +27,13 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 ---
 
 ## 3. Liskov Substitution
-- When a class inherits from another class, the program shouldn't break and you shouldn't need to hack anything to use the subclass.
+- States that Objects in a program should be substitutable by the instances of their subtypes without modifying the correctness of a program.
 - The problem is usually caused by inheriting class S from class T where S and T seem related but have one or more fundamental interface differences.
-- Liskov substitution principle applies to inheritance hierarchies. It is violated when a derived class cannot take the place of a base class without the system breaking.
 - To make sure you avoid violating this rule, try to first think of high-level abstractions/interfaces instead of low-level/concrete implementations.
+    - e.g use inheritance hierarchies
     - e.g. Define constructor arguments to keep inheritance flexible.
+
+
 - LSP is a concept that applies to polymorphism. 
 - If you don’t use polymorphism at all you don’t need to care about the LSP.
 
@@ -39,14 +41,16 @@ Robert C. Martin introduced these 5 principles in his 2000 paper "Design Princip
 
 ## 4. Interface Segregation
 - Make interfaces (parent abstract classes) more specific, rather than generic.
-- Clients should not be forced to implement a function they do no need.
-    - e.g. Create more interfaces (classes) if needed and/or provide objects to constructors.
+- Clients should not be forced to implement a function they do not require.
+    - e.g. Create more interfaces (abstract classes) if needed and/or provide objects to constructors.
 
 ---
 
 ## 5. Dependency Inversion
-- High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. Make classes inherit from abstract classes).
-- Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+- High-level modules should not depend on low-level modules. Both should depend on abstractions.
+    - e.g. Make classes inherit from abstract classes.
+- Abstractions should not depend on details. 
+- Details (concrete implementations) should depend on abstractions.
 - It helps you separate components and helps reduce coupling in the code
 
 ---
