@@ -1,4 +1,4 @@
-# A brief guide to understanding SOLID principles with examples written Python.
+# A brief guide to understanding SOLID principles with examples written in Python.
 
 SOLID Principles is an acronym of 5 principles in Object Oriented Design (OOD).
 Robert C. Martin introduced these 5 principles in his 2000 paper "Design Principles and Design Patterns".
